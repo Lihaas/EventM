@@ -20,13 +20,15 @@ App to Manage whole event(Tech fest,Dandia Nigths,YouthFestival,Etc) through sin
    
   
 ### ScreenShots
-![pica1](https://user-images.githubusercontent.com/25553339/62938650-0d53b800-bded-11e9-92d7-39d894e6fbb4.JPG)
+![pp1](https://user-images.githubusercontent.com/25553339/63801116-33b93d80-c92d-11e9-8ede-a0ee4c34d285.JPG)
 
 ![pp2](https://user-images.githubusercontent.com/25553339/63801118-3451d400-c92d-11e9-8234-f8df3d9195a3.JPG)
 
 ![pp3](https://user-images.githubusercontent.com/25553339/63801120-3451d400-c92d-11e9-8be1-3ac7ef9c8b50.JPG)
 
 ![pp4](https://user-images.githubusercontent.com/25553339/63801122-34ea6a80-c92d-11e9-8ad4-c59f727b1e7d.JPG)
+
+![pp8](https://user-images.githubusercontent.com/25553339/63801126-35830100-c92d-11e9-8e9b-afe243e37f9a.JPG)
 
 ![pp5](https://user-images.githubusercontent.com/25553339/63801123-34ea6a80-c92d-11e9-85d0-810b52bcb03b.JPG)
 
