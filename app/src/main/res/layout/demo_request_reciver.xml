@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/requestReciverDemo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/eventpicss"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/spin"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EventName -"
+                    android:layout_toRightOf="@+id/eventpicss"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_bold"
+                    android:id="@+id/titleEventNamess"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EventName"
+                    android:layout_toRightOf="@+id/titleEventNamess"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/sf_light"
+                    android:id="@+id/eventName2ss"
+                    android:ellipsize="end"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Name -"
+                    android:layout_toRightOf="@+id/eventpicss"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_bold"
+                    android:layout_below="@id/eventName2ss"
+                    android:id="@+id/titleTeamNamess"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Name"
+                    android:layout_toRightOf="@+id/titleTeamNamess"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/sf_light"
+                    android:layout_below="@id/eventName2ss"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/teamNamesss"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/teamNamesss"
+                    android:layout_toRightOf="@id/eventpicss">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                       android:layout_marginRight="20dp"
+                        android:text="Close"
+                        android:textColor="#ffffff"
+                        android:background="#D50000"
+                       android:id="@+id/deletRequest"/>
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:text="Ok"
+                        android:textColor="#ffffff"
+                        android:background="#7CB342"
+                        android:id="@+id/acceptRequest"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OpenEvent"
+    android:background="@drawable/back_of_semi_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/relative_layout">
+
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="0.0px"
+                        android:clipToPadding="false"
+                        android:clipChildren="false"
+                        app:cardPreventCornerOverlap="false"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:src="@drawable/aaaaaaaa"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/event_image" />
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shadow"
+                    android:layout_marginTop="258dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model Dance"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/castilar"
+                    android:textColor="#000000"
+                    android:layout_below="@id/relative_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/event_name_detial"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_name_detial"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:id="@+id/linear_layout"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_weight=".8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Prize - 2000Rs"
+                        android:fontFamily="@font/sf_black"
+                        android:textColor="#0033FF"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/prize_detail"/>
+
+                    <TextView
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="One participant only"
+                        android:fontFamily="@font/sf_black"
+                        android:textColor="#121212"
+                        android:textSize="15sp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/how_much_in_team_detial"/>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A ruthless politician will stop at nothing to conquer Washington, D.C., in this Emmy and Golden Globe-winning political drama."
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_light"
+                    android:textColor="#000000"
+                    android:layout_below="@id/linear_layout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/FullDetail"
+                    android:ellipsize="end"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My List."
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_light"
+                    android:textColor="#000000"
+                    android:layout_below="@id/FullDetail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/my_list"
+                   android:id="@+id/my_lsit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make Team"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_light"
+                    android:textColor="#000000"
+                    android:layout_below="@id/FullDetail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/make_team"
+                    android:id="@+id/makeTeam"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_light"
+                    android:textColor="#000000"
+                    android:layout_below="@id/FullDetail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTop="@drawable/share"
+                    android:id="@+id/share"
+                    android:layout_alignParentRight="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#404040"
+                    android:layout_below="@id/share"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/line1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_below="@id/line1"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/layoutt">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entry fee - "
+        android:textColor="#000000"
+        android:fontFamily="@font/sf_light"
+        android:textSize="18sp"
+        android:id="@+id/entry_fee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       300Rs"
+        android:textColor="#000000"
+        android:fontFamily="@font/sf_light"
+        android:textSize="18sp"
+        android:id="@+id/rates"/>
+
+
+
+
+
+</LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#404040"
+                    android:layout_below="@id/layoutt"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/line2"
+                    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/line2"
+    android:orientation="vertical"
+    android:id="@+id/lastRule">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules -"
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Proper Collage Id is needed for the registration"
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Once you pay for registration can't be refundable"
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Registration will close before 5 hours of event."
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Be on proper time other wise disqualify"
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Any type of miss behave not be tolerate and direct disqualify"
+        android:textSize="15sp"
+        android:fontFamily="@font/sf_light"
+        android:textColor="#000000"
+        android:layout_below="@id/FullDetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay now for registration"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/sf_bold"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/lastRule"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_shape"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:id="@+id/payNow"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/lastRule"
+                    android:layout_marginTop="100dp"
+                    android:visibility="invisible"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

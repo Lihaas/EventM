@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Profile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/asdd">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginBottom="30dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bsdd">
+
+                <com.scwang.wave.MultiWaveHeader
+                    android:id="@+id/waveHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentTop="true"
+                    app:mwhCloseColor="#6A1B9A"
+                    app:mwhStartColor="#9C27B0"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/spin"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_bold"
+                    android:textSize="30sp"
+                    android:text="Sahil verma"
+                    android:layout_below="@id/profile_image2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:id="@+id/nameOfPerson2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_light"
+                    android:textSize="22sp"
+                    android:text="{Coder}"
+                    android:layout_below="@id/nameOfPerson2"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:id="@+id/profesionOfperson"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profesionOfperson"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/codeLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_light"
+                        android:text="Team Maker ID -"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sf_light"
+                        android:text="00000"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/personCode"/>
+                </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/codeLayout"
+    android:orientation="vertical">
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/aaasss"
+    android:layout_below="@id/codeLayout"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:text="payment detail"
+    android:textColor="#ffffff"
+    android:id="@+id/paymentDetial"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/aaasss"
+        android:layout_below="@id/codeLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Search Event"
+        android:textColor="#ffffff"
+        android:id="@+id/teamDetail"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/aaasss"
+        android:layout_below="@id/codeLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pass Detail"
+        android:textColor="#ffffff"
+        android:id="@+id/passDetail"/>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

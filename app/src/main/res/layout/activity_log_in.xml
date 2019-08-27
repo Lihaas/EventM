@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    android:background="@drawable/home">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="invisible"/>
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:id="@+id/layoutts">
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/user"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="7dp"
+           android:paddingStart="10dp"
+            android:hint="User name"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:id="@+id/getTxtEmail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_shape"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/getTxtPassword"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginRight="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Log In"
+            android:textColor="#ffffff"
+            android:id="@+id/loginbutton"/>
+
+
+        <TextView
+            android:id="@+id/recoveryPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(RECOVER PASSWORD)"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_weight=".65"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:id="@+id/relativeLayout1">
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loginProgress"
+            android:visibility="invisible"/>
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:background="@drawable/fbb"
+
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/fb"
+                android:layout_centerInParent="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".145"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/SignupScreen"
+           android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/SignupScreen"
+                android:text="Dont have account?"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textColor="#26d6da"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

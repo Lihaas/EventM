@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Search"
+    android:background="@drawable/search_back">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:src="@drawable/event_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/name_of_app"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_shape"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:drawableLeft="@drawable/search"
+                android:paddingStart="30dp"
+                android:paddingLeft="20dp"
+                android:hint="Search Event"
+                android:drawablePadding="10dp"
+                android:id="@+id/searchBar"/>
+
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_recycle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

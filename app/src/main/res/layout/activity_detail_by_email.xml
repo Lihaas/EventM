@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/emm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/logooo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                tools:ignore="RedundantNamespace" />
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight=".7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/rec"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="@string/names"
+                android:paddingStart="30dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/nameOfUser"
+                android:paddingRight="25dp"/>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rec"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:hint="@string/phone_number"
+                android:drawableLeft="@drawable/call"
+                android:paddingStart="30dp"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:id="@+id/PhoneNoOfUser"
+                android:paddingRight="20dp"
+                android:maxLines="1"
+                android:maxLength="10"/>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rec"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:hint="Profession"
+                android:drawableLeft="@drawable/pro"
+                android:paddingStart="30dp"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:id="@+id/profesionOfUser"
+                android:paddingRight="25dp"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight=".47"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Let's Start"
+                android:textColor="#ffffff"
+                android:id="@+id/letsStart"/>
+
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/letsStart"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/detailTakenProgress"
+                android:visibility="invisible"/>
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight=".13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

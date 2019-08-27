@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/forgot_screen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/logooo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"/>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight=".09"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight=".13"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@drawable/slilly_shape">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your account"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:fontFamily="@font/cairo_black"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight=".19"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@drawable/rec2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your EventM\n
+email address or phone number\n
+linked to your account "
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:fontFamily="@font/cairo_regular"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight=".25"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rec"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:hint="Enter email or phone number"
+              
+                android:paddingStart="30dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/txt_of_recovery"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_shape"
+                android:text="Next"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/button_next_recovery"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

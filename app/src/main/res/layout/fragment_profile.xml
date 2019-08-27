@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Profile">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+           android:id="@+id/relative_layout2">
+
+           <androidx.cardview.widget.CardView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:layout_width="175dp"
+               android:layout_height="252dp"
+               android:layout_marginTop="10dp"
+               app:cardCornerRadius="60dp"
+               app:cardElevation="5dp"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/pic_cardVIew">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   android:scaleType="fitXY"
+                   android:id="@+id/profile_image_main"
+                   tools:ignore="MissingConstraints" />
+
+
+                   <Button
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                        android:background="@drawable/plus2"
+                       android:layout_marginStart="92dp"
+                       android:layout_marginBottom="8dp"
+                       app:layout_constraintBottom_toBottomOf="@+id/profile_image_main"
+                       app:layout_constraintStart_toStartOf="@+id/profile_image_main"
+                       app:layout_constraintTop_toTopOf="@+id/profile_image_main"
+                       app:layout_constraintVertical_bias="1.0" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
+       </RelativeLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="28sp"
+           android:textColor="#670790"
+           android:text="Emmi"
+           android:textStyle="bold"
+           android:layout_below="@id/relative_layout2"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/name_of_person"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="17sp"
+           android:textColor="#000000"
+           android:text="Team Making Code - 3122"
+           android:layout_below="@id/name_of_person"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/team_making_code" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="17sp"
+           android:textColor="#000000"
+           android:text="Dancer"
+           android:layout_below="@id/team_making_code"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/profesion"/>
+
+
+
+            <Button
+                android:layout_width="252dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/profesion"
+                android:background="@drawable/rectangle_shape"
+                android:id="@+id/payment_history"
+                android:text="Payment History"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColor="#ffffff"/>
+
+       <Button
+           android:layout_width="252dp"
+           android:layout_height="60dp"
+           android:layout_below="@id/payment_history"
+           android:background="@drawable/rectangle_shape"
+           android:id="@+id/make_a_team"
+           android:layout_centerHorizontal="true"
+           android:text="Make a Team"
+           android:layout_marginTop="20dp"
+           android:textColor="#ffffff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+</FrameLayout>

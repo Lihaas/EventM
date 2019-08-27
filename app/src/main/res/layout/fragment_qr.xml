@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Qr">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/qrCodeImage"
+        android:layout_below="@id/waveHeader33"
+        android:src="@drawable/spin"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"/>
+    
+    
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleY="-1"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader33"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+              />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="QR Code Of Team"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
+    </ScrollView>
+</FrameLayout>

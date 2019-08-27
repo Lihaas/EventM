@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/requestSendDemo"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+           >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/eventpic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/spin"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EventName -"
+                android:layout_toRightOf="@+id/eventpic"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/sf_bold"
+                android:id="@+id/titleEventName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EventName"
+                android:layout_toRightOf="@+id/titleEventName"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/sf_light"
+                android:id="@+id/eventName2"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Name -"
+                android:layout_toRightOf="@+id/eventpic"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/sf_bold"
+                android:layout_below="@id/eventName2"
+                android:id="@+id/titleTeamName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Name"
+                android:layout_toRightOf="@+id/titleTeamName"
+                android:layout_marginLeft="10dp"
+                android:textSize="17sp"
+                android:fontFamily="@font/sf_light"
+                android:layout_below="@id/eventName2"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/teamNames"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/teamNames"
+                android:layout_toRightOf="@id/eventpic">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:text="Cancle"
+                android:textColor="#ffffff"
+                android:background="#D50000"
+                android:id="@+id/cancle"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
